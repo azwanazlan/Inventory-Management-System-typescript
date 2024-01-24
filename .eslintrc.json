@@ -16,7 +16,6 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "indent": ["error", 2], // enforce 2-space indentation
         "prefer-const": "error" // require const declarations for variables that are never reassigned after declared
     }
 }

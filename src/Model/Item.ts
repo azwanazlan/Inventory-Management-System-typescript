@@ -2,7 +2,7 @@ import { DataTypes, Model } from "sequelize";
 import { dbContext } from "../Services/database";
 import { IItem } from "./Interfaces";
 
-class Item extends Model implements IItem {
+export class Item extends Model implements IItem {
   public id!: number;
   public name!: string;
   public price!: number;
@@ -42,6 +42,6 @@ Item.init(
   },
   {
     tableName: "items",
-    sequelize: dbContext, // this bit is important
+    sequelize: dbContext,
   }
 );
